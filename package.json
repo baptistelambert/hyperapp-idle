@@ -4,6 +4,7 @@
   "description": "Notifies you app when the user is idle.",
   "main": "lib/index.js",
   "author": "Baptiste Lambert",
+  "repository": "https://github.com/baptistelambert/hyperapp-idle",
   "license": "MIT",
   "private": false,
   "scripts": {
