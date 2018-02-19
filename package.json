@@ -1,0 +1,22 @@
+{
+  "name": "hyperapp-idle",
+  "version": "1.0.0",
+  "description": "Notifies you app when the user is idle.",
+  "main": "lib/index.js",
+  "author": "Baptiste Lambert",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "rollup -i src/index.js -o lib/index.js -f umd -n idle",
+    "prepublish": "npm run build"
+  },
+  "peerDependencies": {
+    "hyperapp": "^1.1.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "hyperapp": "^1.1.2",
+    "rollup": "^0.56.2"
+  },
+  "files": ["src", "lib"]
+}
