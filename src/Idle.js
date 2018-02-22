@@ -6,7 +6,6 @@ const eventsChanged = (oldEvents, newEvents) =>
 const Idle = (
   {
     render,
-    component,
     idle = false,
     onChange = () => {},
     timeoutDuration = 1000,
@@ -63,7 +62,7 @@ const Idle = (
       onupdate: checkIfEventsChanged,
       events
     },
-    component ? h(component, { idle }) : render ? render({ idle }) : children
+    render ? render({ idle }) : children
   );
 };
 
